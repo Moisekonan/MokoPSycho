@@ -1,0 +1,127 @@
+.a_top{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.a_top h1{
+    font-size: 50px;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 25px;
+    position: relative;
+    color: #000;
+}
+.a_top h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #64CCC5;
+}
+.a_top p{
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 35px;
+    color: #000;
+}
+
+.contenu_a{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.apropos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_a{
+    flex: 1px;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.img_a img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.img_a:hover img{
+    transform: scale(1.2);
+}
+.contenu{
+    flex: 1px;
+}
+.contenu h2{
+    font-size: 23px;
+    font-family: 'Crimson Text', serif;
+    margin-bottom: 15px;
+    color: #000;
+}
+.contenu p{
+    font-size: 18px;
+    font-family: 'Crimson Text', serif;
+    line-height: 1.5;
+    color: #000;
+}
+.contenu .plus_a{
+    display: block;
+    text-align: center;
+    width: 20%;
+    padding: 10px 20px;
+    color: #000;
+    background-color: #64CCC5;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.contenu .plus_a:hover{
+    background-color: #64CCC5;
+}
+
+@media screen and (max-width: 768px){
+    .a_top{
+        padding: 0px 20px;
+    }
+    .a_top h1{
+        font-size: 36px;
+    }
+    .a_top p{
+        font-size: 16px;
+        border-bottom: 0px;
+    }
+    .contenu_a{
+        padding: 0px;
+    }
+    .apropos{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .img_a{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .img_a img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .contenu p{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .contenu .plus_a{
+        font-size: 16px;
+    }
+}

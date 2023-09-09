@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil - MokoPSycho</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    .hero::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.1); /* Couleur noire avec opacité de 0.5 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Pour s'assurer que le filtre est devant l'arrière-plan */
+    }
+    .hero {
+      background: url(./img/banner.jpg) no-repeat center center/cover;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+      width: 80%;
+      height: 90vh;
+      position: relative;
+    }
+    .hero .left {
+      width: 75%;
+    }
+    .hero .left h1 {
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero .left p {
+      font-size: 1.9rem;
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+    .hero .left a {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: #64CCC5;
+      background-color: #000;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero .left {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>MokoPSycho</h1>
+    <div class="onglets">
+      <a href="#">Accueil</a>
+      <a href="./html/article1.html">Articles</a>
+      <a href="./html/apropos.html">À propos</a>
+    </div>
+  </nav>
+
+    <section class="hero">
+        <div class="left">
+        <h1>La Psychologie du Travail</h1>
+        <p>La psychologie du travail explore les aspects mentaux et émotionnels du monde professionnel. 
+            Elle examine comment la motivation, la satisfaction au travail et la productivité sont influencées par des facteurs psychologiques. 
+            Cette discipline aide les individus à mieux comprendre leur comportement au travail et à améliorer leur bien-être professionnel.</p>
+        <a href="#">En savoir plus</a>
+        </div>
+    </section>
+  
+  <section class="articles">
+    <!-- Titre de la section -->
+    <h1>Articles</h1>
+    
+    <div class="article">
+      <div class="left">
+        <img src="./img/t_s.avif" alt="">
+      </div>
+      <div class="right">
+        <p class="date">Juillet, 24, 2023</p>
+        <h1>La Psychologie du Travail - Comprendre la Motivation et la Satisfaction Professionnelle</h1>
+        <p class="description">La psychologie du travail explore les aspects mentaux et émotionnels du monde professionnel. 
+            Elle examine comment la motivation, la satisfaction au travail et la productivité sont influencées par des facteurs psychologiques. 
+            Cette discipline aide les individus à mieux comprendre leur comportement au travail et à améliorer leur bien-être professionnel.</p>
+        <p class="auteur">Fred Kesse</p>
+      </div>
+    </div> 
+    
+    
+    <div class="article">
+      <div class="left">
+        <img src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg" alt="">
+      </div>
+      <div class="right">
+        <p class="date">Fevrier, 2, 2023</p>
+        <h1>Techniques de Motivation Personnelle - Comment rester motivé au quotidien</h1>
+        <p class="description">Découvrez des techniques puissantes de motivation personnelle qui vous aideront à rester motivé et à atteindre vos objectifs au quotidien. Apprenez comment cultiver une motivation intrinsèque et surmonter les défis qui se présentent sur votre chemin vers la réussite.</p>
+        <p class="auteur">Ouga Deddy</p>
+
+      </div>
+    </div>
+    
+    <div class="article">
+      <div class="left">
+        <img src="https://cdn.pixabay.com/photo/2017/01/09/16/15/calanque-1966920_1280.jpg" alt="">
+      </div>
+      <div class="right">
+        <p class="date">Avril, 15, 2023</p>
+        <h1>Théories de la Motivation - Comprendre les forces qui nous poussent à agir</h1>
+        <p class="description">Explorez les différentes théories de la motivation qui nous aident à comprendre pourquoi nous agissons de certaines manières. Découvrez les principaux concepts et chercheurs qui ont contribué à notre compréhension de la motivation humaine.</p>
+        <p class="auteur">Youssouf Yaka</p>        
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <h2>&copy; 2023, by {{ Code_Oz }}</h2>
+    <div class="social-media">
+        <p><a href="https://github.com/votrecompte"><i class="fab fa-github"></i></a></p>
+        <p><a href="mailto:votreemail@gmail.com"><i class="far fa-envelope"></i></a></p>
+        <p><a href="https://wa.me/votrenumero"><i class="fab fa-whatsapp"></i></a></p>
+    </div>
+    
+  </footer>
+</body>
+</html>
